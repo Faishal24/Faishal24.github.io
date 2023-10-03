@@ -1,0 +1,541 @@
+@font-face {
+  font-family: Monograf;
+  src: url(/assets/fonts/Monograf\ Regular.ttf);
+}
+@font-face {
+  font-family: "Monograf Bold";
+  src: url(/assets/fonts/Monograf\ Bold.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Monograf Text";
+  src: url(/assets/fonts/Monograf\ Text\ Regular.ttf);
+}
+@font-face {
+  font-family: Cavita;
+  src: url(/assets/fonts/Cavita-Regular.ttf);
+}
+
+:root {
+  font-family: Monograf;
+  --white: rgb(247, 247, 238);
+  --yellow: #ffb000;
+  --black: #191a1c;
+  --grey: #646464;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: var(--white);
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  padding: 3em 4.5em;
+  font-weight: 900;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.toggle-btn {
+  display: none;
+}
+
+.panah {
+  transform: rotate(-45deg);
+  margin-right: 0.5em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*  */
+
+.dropdown {
+  display: none;
+  position: absolute;
+  padding-top: 1.5em;
+  right: 4.5rem;
+  top: 75px;
+  height: 0;
+  width: 300px;
+  overflow: hidden;
+  /* background-color: var(--white); */
+  backdrop-filter: blur(25px);
+  transition: height .2s cubic-bezier(0.39, 0.7, 0.37, 1.01);
+}
+
+.dropdown.open {
+  height: 16em;
+  border: solid 3px var(--yellow);
+  border-radius: 1em;
+}
+
+.dropdown li {
+  padding: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  font-weight: 600;
+  /* background-color: var(--white); */
+}
+
+/*  */
+
+.first {
+  margin: 6em 6em 2em 6em;
+}
+
+.myself {
+  display: flex;
+  margin: 8em 0em;
+}
+
+.myself-kiri {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 35%;
+}
+
+.myself-kanan {
+  width: 65%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.myself-kanan img {
+  width: 40%;
+  min-width: 250px;
+}
+
+.myself-kiri h1 {
+  font-size: 3.5em;
+  font-family: "Monograf Bold" !important;
+  margin: 0em;
+  color: var(--black);
+}
+
+.myself-kiri p {
+  font-weight: 500;
+  font-size: 1.6em;
+  margin-bottom: 2.5em;
+  color: var(--black);
+}
+
+.btn-connect {
+  font-family: "Monograf Text";
+  font-weight: 700;
+  text-decoration: none;
+  background-color: none;
+  padding: 1.2em 2em;
+  border: 3px solid var(--yellow);
+  border-radius: 1.3em;
+  color: var(--black);
+  transition: 0.3s ease-out;
+}
+
+.btn-connect:hover {
+  background-color: var(--yellow);
+}
+
+.bottom {
+  display: flex;
+}
+
+.about {
+  width: 50%;
+  font-size: larger;
+}
+
+.about p {
+  font-family: "Monograf Text";
+  color: var(--grey);
+  font-family: Cavita;
+}
+
+.link {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  line-height: 4em;
+  color: var(--black);
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul a {
+  color: var(--black);
+}
+
+/* 
+
+ */
+
+.second {
+  background-color: var(--yellow);
+  padding: 5em 3em;
+}
+
+.plus {
+  margin-right: 1em;
+  color: var(--black);
+  transition: 0.3s ease-out;
+}
+
+.plus:hover {
+  transform: rotate(90deg);
+}
+
+.skill li {
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 2.5em;
+  color: var(--black);
+}
+
+/* 
+
+
+ */
+
+.third {
+  margin: 6em;
+}
+
+.title h1 {
+  font-size: 3.5em;
+  color: var(--black);
+  margin: 0em;
+}
+
+.title p {
+  font-family: Cavita;
+  margin-bottom: 2em;
+  color: var(--grey);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 2em;
+  grid-row-gap: 4em;
+}
+
+.p1 {
+  grid-area: 1 / 1 / 2 / 2;
+  border: 1px solid var(--yellow);
+  border-radius: 2em;
+  padding: 2em 2em;
+}
+.p2 {
+  grid-area: 1 / 2 / 2 / 3;
+  border: 1px solid var(--yellow);
+  border-radius: 2em;
+  padding: 2em 2em;
+}
+.p3 {
+  grid-area: 2 / 1 / 3 / 2;
+  border: 1px solid var(--yellow);
+  border-radius: 2em;
+  padding: 2em 2em;
+}
+
+.p4 {
+  grid-area: 2 / 2 / 3 / 3;
+  border: 1px solid var(--yellow);
+  border-radius: 2em;
+  padding: 2em 2em;
+}
+
+.grid div h2 {
+  font-weight: 900;
+  font-size: 2em;
+  margin: 0em;
+}
+
+.grid div p {
+  margin: 2.5em 0em;
+  color: var(--grey);
+  font-family: Cavita;
+}
+
+.grid div a {
+  text-decoration: underline !important;
+  color: var(--black);
+  font-family: Cavita;
+}
+
+/* 
+
+
+ */
+
+.fourth {
+  background-color: white;
+  padding: 6em;
+  display: flex;
+}
+
+.form {
+  width: 55%;
+  padding-right: 10em;
+}
+
+.form > p {
+  font-family: Cavita;
+  color: var(--grey);
+}
+
+.image {
+  width: 45%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phonenumber"] {
+  margin: 1em 0em;
+  width: 100%;
+  padding: 2em 1.5em;
+  border-radius: 1.5em;
+  border: 1px solid var(--yellow);
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  margin-top: 1em;
+  background: var(--yellow);
+  width: 100%;
+  border: none;
+  border-radius: 1.5em;
+  padding: 2em;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.mail {
+  width: 76%;
+  min-width: 23em;
+  transform: rotate(-20deg);
+}
+
+/* 
+RESPONSIVE DESIGN RESPONSIVE DESIGN 
+RESPONSIVE DESIGN RESPONSIVE DESIGN 
+RESPONSIVE DESIGN RESPONSIVE DESIGN 
+RESPONSIVE DESIGN RESPONSIVE DESIGN 
+RESPONSIVE DESIGN RESPONSIVE DESIGN 
+*/
+
+@media only screen and (max-width: 1024px) {
+  .form {
+    width: 65%;
+    padding-right: 5em;
+  }
+
+  .image {
+    width: 35%;
+  }
+
+  .mail {
+    width: 120%;
+    min-width: 10em;
+  }
+
+  /*  */
+ 
+  .skill li {
+    font-size: 2em;
+  }
+
+  /*  */
+
+  .myself-kiri {
+    width: 65%;
+  }
+  
+  .myself-kanan {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .fourth {
+    display: block;
+  }
+
+  .form {
+    width: 100%;
+    padding-right: 0em;
+  }
+
+  .image {
+    display: none;
+  }
+
+  /*  */
+
+  .third {
+    margin: 2em;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 2em;
+  }
+
+  .p1 {
+    grid-area: 1 / 1 / 2 / 2;
+    border: 1px solid var(--yellow);
+    border-radius: 2em;
+    padding: 2em 2em;
+  }
+  .p2 {
+    grid-area: 2 / 1 / 3 / 2;
+    border: 1px solid var(--yellow);
+    border-radius: 2em;
+    padding: 2em 2em;
+  }
+  .p3 {
+    grid-area: 3 / 1 / 4 / 2;
+    border: 1px solid var(--yellow);
+    border-radius: 2em;
+    padding: 2em 2em;
+  }
+
+  .p4 {
+    grid-area: 4 / 1 / 5 / 2;
+    border: 1px solid var(--yellow);
+    border-radius: 2em;
+    padding: 2em 2em;
+  }
+
+  /*  */
+
+  .link {
+    display: none;
+  }
+
+  .myself-kanan img {
+    width: 100%;
+    min-width: 100px;
+  }
+
+  /*  */
+  nav a {
+    display: none;
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+
+  .dropdown {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .fourth {
+    padding: 2em;
+  }
+
+  /*  */
+  
+  
+
+  /*  */
+
+  .second {
+    padding: 1em 1em 1em 2em;
+  }
+
+  ul {
+    padding: 0px;
+  }
+
+  .skill li {
+    font-size: 1em;
+    line-height: 2.5em;
+  }
+
+  /*  */
+
+  .first {
+    margin: 0em 2em 2em 2em;
+  }
+
+  .myself {
+    display: block;
+    margin: 0em 0em 4em;
+  }
+  
+  .myself-kiri {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+  }
+    
+  .myself-kanan img {
+    display: none;
+  }
+  
+  .myself-kiri h1 {
+    font-size: 3em;
+    font-family: "Monograf Bold" !important;
+    margin: 0em;
+    color: var(--black);
+  }
+  
+  .myself-kiri p {
+    font-weight: 500;
+    font-size: 1.3em;
+    margin-bottom: 2.5em;
+    color: var(--black);
+  }
+  
+  .btn-connect {
+    font-family: "Monograf Text";
+    font-weight: 700;
+    text-decoration: none;
+    background-color: none;
+    padding: 1.2em 2em;
+    border: 3px solid var(--yellow);
+    border-radius: 1.3em;
+    color: var(--black);
+    transition: 0.3s ease-out;
+  }
+  
+  .about {
+    width: 100%;
+    font-size: larger;
+  }
+
+  /*  */
+
+  nav {
+    padding: 2em;
+  }
+
+  .dropdown {
+    right: 2rem;
+    left: 2em;
+    width: unset;
+    top: 60px;
+  }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><i class="fa-solid fa-arrow-right panah"></i>Resume</a>
+
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <div class="dropdown">
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Dribbble</a></li>
+        </div>
+    </header>
+    <main>
+        <section class="first">
+            <div class="myself">
+                <div class="myself-kiri">
+                    <h1>I'm Hakim.</h1>
+                    <p>Always Learn Something New.</p>
+                    <a class="btn-connect" href="#">Let's Connect</a>
+                </div>
+                <div class="myself-kanan">
+                    <img src="assets/img/avatar.png" alt="avatar">
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="about">
+                    <h4>About</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In temporibus eos illum, id odio voluptate, tempora mollitia, suscipit ex non officia voluptatibus quisquam adipisci dolorum sed sit consectetur aliquid quam sequi eaque rerum molestiae facilis ipsa eius?</p>
+                </div>
+                <div class="link">
+                    <ul>
+                        <li><i class="fa-solid fa-arrow-right panah"></i><a href="#">EMAIL</a></li>
+                        <li><i class="fa-solid fa-arrow-right panah"></i><a href="#">LINKEDIN</a></li>
+                        <li><i class="fa-solid fa-arrow-right panah"></i><a href="#">DRIBBBLE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="second">
+            <div class="skill">
+                <ul>
+                    <li><i class="fa-solid fa-plus plus"></i>Front-End Development</li>
+                    <li><i class="fa-solid fa-plus plus"></i>Back-End Development</li>
+                    <li><i class="fa-solid fa-plus plus"></i>Responsive Web Development</li>
+                    <li><i class="fa-solid fa-plus plus"></i>Web Performance Optimization</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="third">
+            <div class="project">
+                <div class="title">
+                    <h1>PROJECT</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, vitae.</p>
+                </div>
+
+                <div class="grid">
+                    <div class="p1">
+                        <h2>Calculator</h2>
+                        <p>Using native react and some other library. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, iure cum enim minus exercitationem provident!</p>
+                        <a href="/mini_project/calculator.html">Page</a>
+                    </div>
+                    <div class="p2">
+                        <h2>Notes</h2>
+                        <p>Using native react and some other library. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, omnis!</p>
+                        <a href="#">Page</a>
+                    </div>
+                    <div class="p3">
+                        <h2>Bookshelf</h2>
+                        <p>Using native react and some other library. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur vitae eos ipsam.</p>
+                        <a href="#">Page</a>
+                    </div>
+                    <div class="p4">
+                        <h2>QR Code Generator</h2>
+                        <p>Using native react and some other library. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, commodi doloremque quae veritatis iure inventore iusto optio ab.</p>
+                        <a href="#">Page</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fourth">
+            <div class="form">
+                <h1>LET'S CONNECT</h1>
+                <p>If you'd like to get in touch with me, you can reach me out using email.</p>
+                <form action="/action.php">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email@Example.com" required>
+                    <input type="phonenumber" placeholder="Phone Number (Optional)">
+                    <div class="tombol">
+                        <input type="submit" value="Send Now">
+                    </div>
+                </form>
+            </div>
+
+            <div class="image">
+                <img class="mail" src="/assets/img/mail.png" alt="mail">
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDown = document.querySelector('.dropdown')
+
+        toggleBtn.onclick = function () {
+            dropDown.classList.toggle('open')
+            const isOpen = dropDown.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+</body>
+</html>

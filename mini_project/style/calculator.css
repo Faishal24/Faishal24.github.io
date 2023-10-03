@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Monograf Bold";
+  src: url(/assets/fonts/Monograf\ Bold.ttf);
+  font-weight: 900;
+}
+
+:root {
+  font-family: Monograf;
+  --ligth: #a0b4ad;
+  --semiligth: #5c8374;
+  --semidark: #183d3d;
+  --dark: #132631;
+}
+
+* {
+  color: var(--ligth);
+  font-family: Monograf Bold;
+}
+
+body {
+  background-color: var(--dark);
+}
+
+input[type="button"] {
+  padding: 20px 30px;
+  width: 100%;
+  border: 2px solid var(--semiligth);
+  border-radius: 1.5em;
+  background-color: var(--white);
+}
+
+input[type="button"]:hover {
+  background-color: var(--semiligth);
+}
+
+input[type="text"] {
+  margin-bottom: 0.5em;
+  padding: 20px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: large;
+  border-radius: 1em;
+  border: none;
+  background-color: var(--semiligth);
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+.calculator {
+  display: flex;
+  justify-content: center;
+  margin-top: 10em;
+}
+
+table {
+  padding: 2em;
+  border-radius: 3em;
+  background-color: var(--semidark);
+}
