@@ -272,9 +272,14 @@ ul a {
 }
 
 .grid div a {
-  text-decoration: underline !important;
   color: var(--black);
   font-family: Cavita;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  transition: text-decoration-color 300ms;
+}
+
+.grid div a:hover {
+  text-decoration-color: rgb(111, 111, 111);
 }
 
 /* 

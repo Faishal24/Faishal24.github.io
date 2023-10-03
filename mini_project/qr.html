@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="stylesheet" href="/mini_project/style/qr.css">
+  </head>
+  <body>
+    <header>
+        <h1>Simple QR Code <br> Generator</h1>
+        <h3>Using qrcode.js library</h3>
+    </header>
+    <main>
+        <form action="/" id="form-qr">
+            <input 
+                type="text" 
+                name="input-qr"
+                id="qr-content"
+                value=""
+                placeholder="Enter QR content"
+                autocomplete="off" 
+                required/>
+            <input type="submit" value="Generate">
+        </form>
+        <br>
+        <div id="qr-code">
+        </div>
+    </main>
+  </body>
+
+  <script>
+    let qrInput = document.getElementById("qr-content");
+    let qrForm = document.getElementById("form-qr");
+    let qrCode;
+
+    function generateQrCode(qrContent) {
+        return new QRCode("qr-code", {
+            text: qrContent,
+            width: 256,
+            height: 256,
+            colorDark: "#451952",
+            colorLight: "#F8F0E5",
+            correctLevel: QRCode.CorrectLevel.H,
+        });
+    }
+
+    qrForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        let qrContent = qrInput.value;
+        let container = document.getElementById("qr-code")
+        if (qrCode == null) {
+            qrCode = generateQrCode("Input QR content")
+        } else {
+            qrCode.makeCode(qrContent);
+        }
+        container.style.backgroundColor = "#f8f0e5";
+        container.style.border = "5px solid #451952"; 
+        container.style.borderRadius = "2em";
+        container.style.padding = "2em";
+        container.style.width = "fit-content"
+        container.style.display = "flex";
+        container.style.margin = "0em auto 0em auto"
+    });
+  </script>
+</html>

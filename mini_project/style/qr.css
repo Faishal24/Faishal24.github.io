@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Monograf Bold";
+  src: url(/assets/fonts/Monograf\ Bold.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Monograf;
+  src: url(/assets/fonts/Monograf\ Regular.ttf);
+}
+
+:root {
+  font-family: Monograf Bold;
+  --light: #ffe569;
+  --light2: #f4d74a;
+  --light3: #f9efc0;
+  --semilight: #f79327;
+  --semilight2: #faa850;
+  --dark: #b70404;
+}
+
+body {
+  text-align: center;
+  background-color: var(--light);
+}
+
+header {
+  margin-top: 4em;
+}
+
+img {
+  margin: 0em auto 0em auto;
+}
+
+input[type="text"] {
+  border-radius: 2em;
+  padding: 1em;
+  color: var(--dark);
+  border: 3px solid var(--semilight);
+  background-color: var(--light2);
+  font-family: Monograf;
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1em;
+}
+
+input[type="text"]::placeholder {
+  color: var(--dark);
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+input[type="submit"] {
+  padding: 1em;
+  border: 3px solid var(--semilight2);
+  border-radius: 2em;
+  font-family: Monograf;
+  background-color: var(--light3);
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"]:hover {
+    transform: translateY(2px) translateX(3px);
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.5);
+    left: 20px;
+}
+
+@media only screen and (max-width: 343px) {
+    img {
+        width: 50%;
+    }
+}
