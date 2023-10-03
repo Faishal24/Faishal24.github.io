@@ -59,3 +59,14 @@ table {
   border-radius: 3em;
   background-color: var(--semidark);
 }
+
+@media only screen and (max-width: 426px) {
+    input[type="button"] {
+        padding: 17px 15px;
+      }
+
+      input[type="text"] {
+        margin-bottom: 0.5em;
+        padding: 17px 20px;
+      }
+}
