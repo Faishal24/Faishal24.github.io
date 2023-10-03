@@ -98,13 +98,11 @@
             <div class="form">
                 <h1>LET'S CONNECT</h1>
                 <p>If you'd like to get in touch with me, you can reach me out using email.</p>
-                <form action="/action.php">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Email@Example.com" required>
-                    <input type="phonenumber" placeholder="Phone Number (Optional)">
-                    <div class="tombol">
-                        <input type="submit" value="Send Now">
-                    </div>
+                <form method="post" action="mailto:duatensan@gmail.com" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Email@Example.com" required>
+                    <input type="text" name="message" placeholder="Your Message">
+                    <input type="submit" value="Send Now">
                 </form>
             </div>
 
