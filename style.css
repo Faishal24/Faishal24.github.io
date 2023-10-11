@@ -183,7 +183,8 @@ ul a {
  */
 
 .second {
-  background-color: var(--yellow);
+  background-image: url(/assets/img/bg.png);
+  background-size: cover;
   padding: 5em 3em;
 }
 
