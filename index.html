@@ -19,8 +19,13 @@
 
         <div class="dropdown">
             <li><a href="#">Resume</a></li>
-            <li><a href="#">Email</a></li>
-            <li><a href="#">LinkedIn</a></li>
+            <li><a href="mailto:ishal.2401@gmail.com">EMAIL</a></li>
+            <li><a 
+                href="https://www.linkedin.com/in/faishal-hakim-62b849257"
+                target="_blank"
+                rel="noopener noreferrer">
+                LINKEDIN</a>
+            </li>
             <li><a href="#">Dribbble</a></li>
         </div>
     </header>
@@ -43,8 +48,19 @@
                 </div>
                 <div class="link">
                     <ul>
-                        <li><i class="fa-solid fa-arrow-right panah"></i><a href="#">EMAIL</a></li>
-                        <li><i class="fa-solid fa-arrow-right panah"></i><a href="#">LINKEDIN</a></li>
+                        <li>
+                            <i class="fa-solid fa-arrow-right panah"></i>
+                            <a href="mailto:ishal.2401@gmail.com">
+                                EMAIL</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-arrow-right panah"></i>
+                            <a 
+                            href="https://www.linkedin.com/in/faishal-hakim-62b849257"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            LINKEDIN</a>
+                        </li>
                         <li><i class="fa-solid fa-arrow-right panah"></i><a href="#">DRIBBBLE</a></li>
                     </ul>
                 </div>
@@ -113,18 +129,28 @@
     </main>
 
     <script>
-        const toggleBtn = document.querySelector('.toggle-btn')
-        const toggleBtnIcon = document.querySelector('.toggle-btn i')
-        const dropDown = document.querySelector('.dropdown')
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggleBtn = document.querySelector('.toggle-btn')
+            const toggleBtnIcon = document.querySelector('.toggle-btn i')
+            const dropDown = document.querySelector('.dropdown')
 
-        toggleBtn.onclick = function () {
-            dropDown.classList.toggle('open')
-            const isOpen = dropDown.classList.contains('open')
+            toggleBtn.onclick = function (e) {
+                e.stopPropagation();
+                dropDown.classList.toggle('open');
+                const isOpen = dropDown.classList.contains('open');
 
-            toggleBtnIcon.classList = isOpen
-                ? 'fa-solid fa-xmark'
-                : 'fa-solid fa-bars'
-        }
+                toggleBtnIcon.classList = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars';
+            }
+
+            document.onclick = function() {
+                if (dropDown.classList.contains('open')) {
+                    dropDown.classList.remove('open');
+                    toggleBtnIcon.classList = 'fa-solid fa-bars';
+                }
+            }
+        })
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
