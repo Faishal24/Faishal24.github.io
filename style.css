@@ -66,8 +66,8 @@ a {
   height: 0;
   width: 300px;
   overflow: hidden;
-  /* background-color: var(--white); */
-  backdrop-filter: blur(25px);
+  background-color: var(--white);
+  /* backdrop-filter: blur(25px); */
   transition: height .2s cubic-bezier(0.39, 0.7, 0.37, 1.01);
 }
 
