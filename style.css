@@ -322,6 +322,9 @@ input[type="phonenumber"] {
 }
 
 input[type="submit"] {
+  font-family: "Monograf Text";
+  font-weight: 700;
+  color: white;
   margin-top: 1em;
   background: var(--yellow);
   width: 100%;
@@ -476,7 +479,7 @@ RESPONSIVE DESIGN RESPONSIVE DESIGN
   }
 
   .skill li {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 2.5em;
   }
 

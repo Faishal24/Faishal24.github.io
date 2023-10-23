@@ -40,7 +40,7 @@
                 <div class="myself-kiri">
                     <h1>I'm Hakim.</h1>
                     <p>Always Learn Something New.</p>
-                    <a class="btn-connect" href="#">Let's Connect</a>
+                    <a class="btn-connect" href="#connect">Let's Connect</a>
                 </div>
                 <div class="myself-kanan">
                     <img src="assets/img/avatar.png" alt="avatar">
@@ -119,14 +119,14 @@
             </div>
         </section>
 
-        <section class="fourth">
+        <section class="fourth" id="connect">
             <div class="form">
                 <h1>LET'S CONNECT</h1>
                 <p>If you'd like to get in touch with me, you can reach me out using email.</p>
                 <form method="post" action="mailto:duatensan@gmail.com" enctype="text/plain">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Email@Example.com" required>
-                    <input type="text" name="message" placeholder="Your Message">
+                    <input type="text" name="name" placeholder="Your Name" aria-autocomplete="list" required>
+                    <input type="email" name="email" placeholder="Email@Example.com" aria-autocomplete="list" required>
+                    <input type="text" name="message" placeholder="Your Message" aria-autocomplete="list">
                     <input type="submit" value="Send Now">
                 </form>
             </div>
