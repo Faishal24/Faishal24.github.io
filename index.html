@@ -1,167 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="#"><i class="fa-solid fa-arrow-right panah"></i>Resume</a>
+      <nav>
+        <a href="#"><i class="fa-solid fa-arrow-right panah"></i>Resume</a>
 
-            <div class="toggle-btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </nav>
-
-        <div class="dropdown">
-            <li><a href="#">Resume</a></li>
-            <li><a href="mailto:ishal.2401@gmail.com">Email</a></li>
-            <li><a 
-                href="https://www.linkedin.com/in/faishal-hakim-62b849257"
-                target="_blank"
-                rel="noopener noreferrer">
-                Linkedin</a>
-            </li>
-            <li>
-                <a href="https://medium.com/@Faishal24"
-                target="_blank">
-                Medium
-                </a>
-            </li>
+        <div class="toggle-btn">
+          <i class="fa-solid fa-bars"></i>
         </div>
+      </nav>
+
+      <div class="dropdown">
+        <li><a href="#">Resume</a></li>
+        <li><a href="mailto:ishal.2401@gmail.com">Email</a></li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/faishal-hakim-62b849257"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Linkedin</a
+          >
+        </li>
+        <li>
+          <a href="https://medium.com/@Faishal24" target="_blank"> Medium </a>
+        </li>
+      </div>
     </header>
     <main>
-        <section class="first">
-            <div class="myself">
-                <div class="myself-kiri">
-                    <h1>I'm Hakim.</h1>
-                    <p>Always Learn Something New.</p>
-                    <a class="btn-connect" href="#connect">Let's Connect</a>
-                </div>
-                <div class="myself-kanan">
-                    <img src="assets/img/avatar.png" alt="avatar">
-                </div>
-            </div>
-            <div class="bottom">
-                <div class="about">
-                    <h4>About</h4>
-                    <p>I'm a web developer who enjoys learning new things and has a special fondness for Linux. I love exploring and creating websites while also embracing the world of open-source software through Linux. Join me on my journey as I continue to grow and build in the web development field.</p>
-                </div>
-                <div class="link">
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-arrow-right panah"></i>
-                            <a href="mailto:ishal.2401@gmail.com">
-                            EMAIL</a>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-arrow-right panah"></i>
-                            <a 
-                            href="https://www.linkedin.com/in/faishal-hakim-62b849257"
-                            target="_blank">
-                            LINKEDIN</a>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-arrow-right panah"></i>
-                            <a href="https://medium.com/@Faishal24"
-                            target="_blank"
-                            >MEDIUM</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+      <section class="first">
+        <div class="myself">
+          <div class="myself-kiri" data-aos="fade-right">
+            <h1>I'm Hakim.</h1>
+            <p>Always Learn Something New.</p>
+            <a class="btn-connect" href="#connect">Let's Connect</a>
+          </div>
+          <div class="myself-kanan" data-aos="zoom-in">
+            <img src="assets/img/avatar.png" alt="avatar" />
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="about" data-aos="fade">
+            <h4>About</h4>
+            <p>
+              I'm a web developer who enjoys learning new things and has a
+              special fondness for Linux. I love exploring and creating websites
+              while also embracing the world of open-source software through
+              Linux. Join me on my journey as I continue to grow and build in
+              the web development field.
+            </p>
+          </div>
+          <div class="link">
+            <ul>
+              <li>
+                <i class="fa-solid fa-arrow-right panah"></i>
+                <a href="mailto:ishal.2401@gmail.com"> EMAIL</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-arrow-right panah"></i>
+                <a
+                  href="https://www.linkedin.com/in/faishal-hakim-62b849257"
+                  target="_blank"
+                >
+                  LINKEDIN</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-arrow-right panah"></i>
+                <a href="https://medium.com/@Faishal24" target="_blank"
+                  >MEDIUM</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-        <section class="second">
-            <div class="skill">
-                <ul>
-                    <li><i class="fa-solid fa-plus plus"></i>Front-End Development</li>
-                    <li><i class="fa-solid fa-plus plus"></i>Back-End Development</li>
-                    <li><i class="fa-solid fa-plus plus"></i>Responsive Web Development</li>
-                    <li><i class="fa-solid fa-plus plus"></i>Web Performance Optimization</li>
-                </ul>
-            </div>
-        </section>
+      <section class="second">
+        <div class="skill">
+          <ul>
+            <li data-aos="fade-right" ><i class="fa-solid fa-plus plus"></i>Front-End Development</li>
+            <li data-aos="fade-right" ><i class="fa-solid fa-plus plus"></i>Back-End Development</li>
+            <li data-aos="fade-right" ><i class="fa-solid fa-plus plus"></i>Responsive Web Development</li>
+            <li data-aos="fade-right" ><i class="fa-solid fa-plus plus"></i>Web Performance Optimization</li>
+          </ul>
+        </div>
+      </section>
 
-        <section class="third">
-            <div class="project">
-                <div class="title">
-                    <h1>PROJECT</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, vitae.</p>
-                </div>
+      <section class="third">
+        <div class="project">
+          <div class="title" data-aos="fade">
+            <h1>PROJECT</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+              vitae.
+            </p>
+          </div>
 
-                <div class="grid">
-                    <div class="p1">
-                        <h2>Calculator</h2>
-                        <p>Using vanilla javascript and math library. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, iure cum enim minus exercitationem provident!</p>
-                        <a href="/mini_project/calculator.html">Page</a>
-                    </div>
-                    <div class="p2">
-                        <h2>Notes</h2>
-                        <p>Using native react. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, omnis!</p>
-                        <a href="#">Page</a>
-                    </div>
-                    <div class="p3">
-                        <h2>Bookshelf</h2>
-                        <p>Using vanilla javascript. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur vitae eos ipsam.</p>
-                        <a href="/mini_project/bookshelf.html">Page</a>
-                    </div>
-                    <div class="p4">
-                        <h2>QR Code Generator</h2>
-                        <p>Using vanilla javascript and some other library. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, commodi doloremque quae veritatis iure inventore iusto optio ab.</p>
-                        <a href="/mini_project/qr.html">Page</a>
-                    </div>
-                </div>
+          <div class="grid">
+            <div class="p1" data-aos="fade-right">
+              <h2>Calculator</h2>
+              <p>
+                Using vanilla javascript and math library. Lorem ipsum dolor sit
+                amet consectetur, adipisicing elit. Ratione, iure cum enim minus
+                exercitationem provident!
+              </p>
+              <a href="/mini_project/calculator.html">Page</a>
             </div>
-        </section>
+            <div class="p2" data-aos="fade-left">
+              <h2>Notes</h2>
+              <p>
+                Using native react. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Amet, omnis!
+              </p>
+              <a href="#">Page</a>
+            </div>
+            <div class="p3" data-aos="fade-right">
+              <h2>Bookshelf</h2>
+              <p>
+                Using vanilla javascript. Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Aspernatur vitae eos ipsam.
+              </p>
+              <a href="/mini_project/bookshelf.html">Page</a>
+            </div>
+            <div class="p4" data-aos="fade-left">
+              <h2>QR Code Generator</h2>
+              <p>
+                Using vanilla javascript and some other library. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Nemo, commodi
+                doloremque quae veritatis iure inventore iusto optio ab.
+              </p>
+              <a href="/mini_project/qr.html">Page</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="fourth" id="connect">
-            <div class="form">
-                <h1>LET'S CONNECT</h1>
-                <p>If you'd like to get in touch with me, you can reach me out using email.</p>
-                <form method="post" action="mailto:duatensan@gmail.com" enctype="text/plain">
-                    <input type="text" name="name" placeholder="Your Name" aria-autocomplete="list" required>
-                    <input type="email" name="email" placeholder="Email@Example.com" aria-autocomplete="list" required>
-                    <input type="text" name="message" placeholder="Your Message" aria-autocomplete="list">
-                    <input type="submit" value="Send Now">
-                </form>
-            </div>
+      <section class="fourth" id="connect">
+        <div class="form" data-aos="fade">
+          <h1>LET'S CONNECT</h1>
+          <p>
+            If you'd like to get in touch with me, you can reach me out using
+            email.
+          </p>
+          <form
+            method="post"
+            action="mailto:duatensan@gmail.com"
+            enctype="text/plain"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              aria-autocomplete="list"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email@Example.com"
+              aria-autocomplete="list"
+              required
+            />
+            <input
+              type="text"
+              name="message"
+              placeholder="Your Message"
+              aria-autocomplete="list"
+            />
+            <input type="submit" value="Send Now" />
+          </form>
+        </div>
 
-            <div class="image">
-                <img class="mail" src="/assets/img/mail.png" alt="mail">
-            </div>
-        </section>
+        <div class="image">
+          <img class="mail" src="/assets/img/mail.png" alt="mail" />
+        </div>
+      </section>
     </main>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const toggleBtn = document.querySelector('.toggle-btn')
-            const toggleBtnIcon = document.querySelector('.toggle-btn i')
-            const dropDown = document.querySelector('.dropdown')
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleBtn = document.querySelector(".toggle-btn");
+        const toggleBtnIcon = document.querySelector(".toggle-btn i");
+        const dropDown = document.querySelector(".dropdown");
 
-            toggleBtn.onclick = function (e) {
-                e.stopPropagation();
-                dropDown.classList.toggle('open');
-                const isOpen = dropDown.classList.contains('open');
+        toggleBtn.onclick = function (e) {
+          e.stopPropagation();
+          dropDown.classList.toggle("open");
+          const isOpen = dropDown.classList.contains("open");
 
-                toggleBtnIcon.classList = isOpen
-                    ? 'fa-solid fa-xmark'
-                    : 'fa-solid fa-bars';
-            }
+          toggleBtnIcon.classList = isOpen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars";
+        };
 
-            document.onclick = function() {
-                if (dropDown.classList.contains('open')) {
-                    dropDown.classList.remove('open');
-                    toggleBtnIcon.classList = 'fa-solid fa-bars';
-                }
-            }
-        })
+        document.onclick = function () {
+          if (dropDown.classList.contains("open")) {
+            dropDown.classList.remove("open");
+            toggleBtnIcon.classList = "fa-solid fa-bars";
+          }
+        };
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
-</body>
+  </body>
 </html>
