@@ -456,6 +456,7 @@ RESPONSIVE DESIGN RESPONSIVE DESIGN
 
   .dropdown {
     display: block;
+    z-index: 99;
   }
 }
 
