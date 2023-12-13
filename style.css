@@ -446,6 +446,9 @@ RESPONSIVE DESIGN RESPONSIVE DESIGN
   .myself-kanan img {
     width: 100%;
     min-width: 100px;
+    padding: .4em;
+    border: .4em solid var(--black);
+    border-radius: 100%;
   }
 
   /*  */
