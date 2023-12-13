@@ -115,6 +115,9 @@ a {
 .myself-kanan img {
   width: 40%;
   min-width: 250px;
+  padding: .4em;
+  border: .4em solid var(--black);
+  border-radius: 100%;
 }
 
 .myself-kiri h1 {
@@ -503,6 +506,7 @@ RESPONSIVE DESIGN RESPONSIVE DESIGN
     
   .myself-kanan img {
     display: none;
+    
   }
   
   .myself-kiri h1 {
