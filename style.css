@@ -118,6 +118,11 @@ a {
   padding: .4em;
   border: .4em solid var(--black);
   border-radius: 100%;
+  transition: .3s;
+}
+
+.myself-kanan img:hover {
+  filter: grayscale(100%);
 }
 
 .myself-kiri h1 {
