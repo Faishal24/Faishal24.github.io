@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+    --bg: #CADC9F;
+    --green4: #0F380F;
+    --green3: #306230;
+    --green2: #8BAC0F;
+    --green1: #9BBC0F;
+    --text: #E2F3E3;
+}
+
+@font-face {
+    font-family: Pixeloid;
+    src: url(/assets/PixeloidMono.ttf);
+}
+@font-face {
+    font-family: Gameboy;
+    src: url(/assets/Early\ GameBoy.ttf);
+}
+@font-face {
+    font-family: Title;
+    src: url(/assets/04B_30__.TTF);
+}
+
+* :not(header > h1) {
+    box-sizing: border-box;
+    font-family: Gameboy;
+}
+
+html, body {
+    font-family: Raleway, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg);
+    color: var(--text);
+
+}
+
+header {
+    background: var(--green4);
+    padding: 10px;
+    text-align: center;
+    font-family: Title !important;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .container {
+    width: 1024px;
+    margin: 16px;
+    background: var(--green3);
+    padding: 16px;
+    flex-grow: 1;
+    height: fit-content;
+    box-shadow: 10px 10px 0px 0px rgba(5, 16, 10, 0.75);
+}
+
+#completed-todos {
+    color: var(--green4);
+}
+
+.item {
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: var(--text);
+    display: flex;
+    align-items: center;
+    color: var(--green4);
+}
+
+.item > .inner h2 {
+    margin-bottom: unset;
+}
+
+.item > .inner p {
+    margin-top: 5px;
+}
+
+.form {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    height: 300px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+input[type=text], input[type=date] {
+    font-family: Pixeloid;
+    background: var(--text);
+    border: 2px solid var(--green2);
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.btn-submit {
+    width: fit-content;
+    font-family: Pixeloid;
+    padding: 12px 24px;
+    border: 2px solid var(--green2);
+    color: var(--green4);
+    font-size: 24px;
+    margin-top: auto;
+    align-self: flex-end;
+    cursor: pointer;
+    box-shadow: 5px 5px 0px 0px rgba(10, 32, 14, 0.75);
+}
+
+.btn-submit:hover {
+    background: var(--green2);
+    color: var(--text);
+    position: relative;
+    top: 3px;
+    left: 3px;
+    box-shadow: 2px 2px 0px 0px rgba(10, 32, 14, 0.75);
+}
+
+input[type=text], input[type=date], .btn-submit:focus {
+    outline: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.form-title {
+    margin: auto 0;
+}
+
+.check-button {
+    width: 40px;
+    height: 40px;
+    background: url('../assets/close.png');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background-size: contain;
+    opacity: 0.5;
+}
+
+.trash-button {
+    width: 40px;
+    height: 40px;
+    background: url('../assets/cocktail.png');
+    background-size: contain;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background-size: contain;
+    opacity: 0.5;
+}
+
+.undo-button {
+    width: 40px;
+    height: 40px;
+    background: url('../assets/next.png');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+    transform: rotate(180deg);
+}
+
+.undo-button:hover {
+    background-size: contain;
+    opacity: 0.5;
+}
+
+.check-button:focus, .trash-button {
+    outline: none;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 15px;
+    }
+
+    .wrapper .container {
+        width: 100%;
+    }
+
+    .list-item {
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .btn-submit {
+        height: fit-content;
+        width: 100%;
+        font-family: Pixeloid;
+        padding: 1px 24px;
+        margin-bottom: 2em;
+    }
+
+    .text-center {
+        font-size: 4vw;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .item {
+        width: 110%;
+    }
+
+    .item > .inner h2 {
+        font-size: 5vw;
+    }
+    
+    .item > .inner p {
+        font-size: 3vw;
+    }
+
+    input[type=date] {
+        width: 100%;
+    }
+}
