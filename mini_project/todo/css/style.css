@@ -11,15 +11,15 @@
 
 @font-face {
     font-family: Pixeloid;
-    src: url(/assets/PixeloidMono.ttf);
+    src: url(../assets/PixeloidMono.ttf);
 }
 @font-face {
     font-family: Gameboy;
-    src: url(/assets/Early\ GameBoy.ttf);
+    src: url(../assets/Early\ GameBoy.ttf);
 }
 @font-face {
     font-family: Title;
-    src: url(/assets/04B_30__.TTF);
+    src: url(../assets/04B_30__.TTF);
 }
 
 * :not(header > h1) {
